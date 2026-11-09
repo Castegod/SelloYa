@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acceso administrador · SelloYa</title>
+  <meta name="description" content="SelloYa: tarjeta de sellos digital con códigos QR para negocios de barrio.">
+  <link rel="icon" href="../img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="acceso-marco">
+    <!-- Panel de marca (solo escritorio) -->
+    <aside class="acceso-marca" aria-label="SelloYa">
+      <a class="logo logo-inverso" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo-inverso.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+      <div>
+        <img class="foto" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&amp;q=70&amp;auto=format&amp;fit=crop" alt="Restaurante con mesas en la calle" loading="lazy">
+        <h2>Panel interno del equipo SelloYa.</h2>
+        <p>Aprobación de negocios, planes, soporte e indicadores de la plataforma.</p>
+      </div>
+      <div class="acceso-marca-pie">
+        <img src="../img/sello-selloya-inverso.svg" alt="" width="64" height="64">
+        <span>© 2026 SelloYa · Fidelización digital para negocios de barrio</span>
+      </div>
+    </aside>
+
+    <main id="contenido" class="acceso-panel">
+      <div class="acceso-panel-barra">
+        <a class="enlace enlace-sin-linea" href="../ayuda.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg>Centro de ayuda</a>
+        <a class="enlace enlace-sin-linea" href="iniciar-sesion.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Volver</a>
+      </div>
+      <!-- Barra superior en celular -->
+      <div class="acceso-movil">
+        <a class="boton-icono" style="border:0" href="iniciar-sesion.html" aria-label="Volver"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+        <a class="logo" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+        <a class="boton-icono" style="border:0" href="../ayuda.html" aria-label="Centro de ayuda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg></a>
+      </div>
+
+      <div class="acceso-formulario">
+        <img class="acceso-foto-movil solo-movil-bloque" src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=700&amp;q=70&amp;auto=format&amp;fit=crop" alt="" loading="lazy">
+        <div>
+          <p class="etiqueta">Acceso restringido</p>
+          <h1>Panel de administración</h1>
+          <p class="texto-suave">Solo para el equipo de SelloYa. Cada ingreso queda registrado.</p>
+        </div>
+        <form class="formulario" action="../admin/indicadores.html" method="get">
+          <div class="campo">
+            <label for="correo">Correo corporativo <small>(obligatorio)</small></label>
+            <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg><input id="correo" name="correo" type="email" value="v.ruiz@selloya.co" autocomplete="username" required></div>
+          </div>
+          <div class="campo">
+            <label for="clave">Contraseña</label>
+            <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><input id="clave" name="clave" type="password" value="contrasena1" autocomplete="current-password"><button class="campo-boton" type="button" data-ver-clave="clave" aria-pressed="false">Mostrar</button></div>
+          </div>
+          <div class="campo">
+            <label for="codigo-2fa">Código de verificación</label>
+            <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><input id="codigo-2fa" name="codigo-2fa" type="text" value="482913" autocomplete="one-time-code" aria-describedby="codigo-2fa-ayuda" inputmode="numeric" maxlength="6"></div>
+            <p class="campo-ayuda" id="codigo-2fa-ayuda"><span>Escribe el código de 6 dígitos de tu app de autenticación.</span></p>
+          </div>
+          <button class="btn btn-primario btn-bloque" type="submit"><span>Entrar al panel</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </form>
+        <p class="centrado"><a class="enlace enlace-sin-linea" href="iniciar-sesion.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>No soy administrador, volver</a></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centro de ayuda · SelloYa</title>
+  <meta name="description" content="SelloYa: tarjeta de sellos digital con códigos QR para negocios de barrio.">
+  <link rel="icon" href="img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="pagina-simple-barra">
+    <div class="contenedor barra-superior">
+      <a class="logo" href="index.html" aria-label="SelloYa, ir al inicio"><img src="img/isotipo.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+      <a class="btn btn-secundario btn-mini" href="index.html" data-volver><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg><span>Volver</span></a>
+    </div>
+  </header>
+
+  <main id="contenido" class="pagina-simple">
+    <div class="contenedor-angosto">
+      <header class="encabezado-pagina">
+        <div>
+          <p class="etiqueta">Centro de ayuda</p>
+          <h1>¿En qué te podemos ayudar?</h1>
+          <p>Respuestas cortas a las dudas más comunes de clientes y negocios.</p>
+        </div>
+      </header>
+      <form role="search" onsubmit="return false">
+        <div class="campo">
+          <label for="buscar-ayuda">Buscar en la ayuda</label>
+          <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="buscar-ayuda" name="buscar-ayuda" type="search" placeholder="Ej. no puedo escanear el código"></div>
+        </div>
+      </form>
+      <ul class="chips" aria-label="Filtros"><li><button class="chip" type="button" aria-pressed="true">Clientes</button></li><li><button class="chip" type="button" aria-pressed="false">Negocios</button></li><li><button class="chip" type="button" aria-pressed="false">Cuenta</button></li><li><button class="chip" type="button" aria-pressed="false">Accesibilidad</button></li></ul>
+      <details class="pregunta" open>
+        <summary>¿Cómo registro un sello?</summary>
+        <p>Después de pagar, toca «Registrar sello» y apunta la cámara al código QR del negocio. Si prefieres no usar la cámara, escribe el código corto que aparece debajo del QR (por ejemplo, CAFE-4821).</p>
+      </details>
+      <details class="pregunta">
+        <summary>¿Qué hago si no puedo escanear el QR?</summary>
+        <p>Escribe el código corto que está debajo del QR o pídele al personal que te lo dicte. También puedes activar la «Guía por voz» en la pantalla de registro.</p>
+      </details>
+      <details class="pregunta">
+        <summary>¿Cuándo vence mi recompensa?</summary>
+        <p>Cada negocio define la vigencia; por defecto son 30 días desde que completas la tarjeta. La fecha aparece en «Recompensas».</p>
+      </details>
+      <details class="pregunta">
+        <summary>¿Cómo agrando el texto o activo el alto contraste?</summary>
+        <p>Entra a «Mi perfil» › «Accesibilidad». Allí puedes agrandar el texto, activar el alto contraste y reducir las animaciones.</p>
+      </details>
+      <details class="pregunta">
+        <summary>¿Cómo genero e imprimo el código QR de mi negocio?</summary>
+        <p>En el portal del negocio, abre «Código QR» y elige «Descargar PDF» o «Imprimir». Recomendamos un tamaño mínimo de 10 × 10 cm.</p>
+      </details>
+      <details class="pregunta">
+        <summary>¿Puedo cambiar de plan en cualquier momento?</summary>
+        <p>Sí. En «Plan y suscripción» eliges el nuevo plan y el equipo de SelloYa lo activa. No hay permanencia mínima.</p>
+      </details>
+      <section class="caja pila" style="background:var(--menta);border-color:#bfe9e3" aria-labelledby="soporte-titulo">
+        <div class="fila">
+          <span class="icono-caja"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m5.6 5.6 3.6 3.6M14.8 14.8l3.6 3.6M14.8 9.2l3.6-3.6M5.6 18.4l3.6-3.6"/></svg></span>
+          <div>
+            <h2 id="soporte-titulo" style="font-size:1.2rem;margin:0">¿No encontraste tu respuesta?</h2>
+            <p class="texto-suave texto-pequeno" style="margin:0">Escríbenos y te respondemos en menos de un día hábil.</p>
+          </div>
+        </div>
+        <p style="margin:0"><a class="btn btn-primario" href="mailto:soporte@selloya.co"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Escribir a soporte</span></a></p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

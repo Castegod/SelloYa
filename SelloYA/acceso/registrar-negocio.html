@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar negocio · SelloYa</title>
+  <meta name="description" content="SelloYa: tarjeta de sellos digital con códigos QR para negocios de barrio.">
+  <link rel="icon" href="../img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="acceso-marco">
+    <!-- Panel de marca (solo escritorio) -->
+    <aside class="acceso-marca" aria-label="SelloYa">
+      <a class="logo logo-inverso" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo-inverso.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+      <div>
+        <img class="foto" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=900&amp;q=70&amp;auto=format&amp;fit=crop" alt="Variedad de panes artesanales" loading="lazy">
+        <h2>Tus clientes de siempre, ahora con una razón más para volver.</h2>
+        <p>Registra tu negocio, define tu recompensa y empieza a entregar sellos con un código QR.</p>
+      </div>
+      <div class="acceso-marca-pie">
+        <img src="../img/sello-selloya-inverso.svg" alt="" width="64" height="64">
+        <span>© 2026 SelloYa · Fidelización digital para negocios de barrio</span>
+      </div>
+    </aside>
+
+    <main id="contenido" class="acceso-panel">
+      <div class="acceso-panel-barra">
+        <a class="enlace enlace-sin-linea" href="../ayuda.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg>Centro de ayuda</a>
+        <a class="enlace enlace-sin-linea" href="crear-cuenta.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Volver</a>
+      </div>
+      <!-- Barra superior en celular -->
+      <div class="acceso-movil">
+        <a class="boton-icono" style="border:0" href="crear-cuenta.html" aria-label="Volver"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a>
+        <a class="logo" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+        <a class="boton-icono" style="border:0" href="../ayuda.html" aria-label="Centro de ayuda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg></a>
+      </div>
+
+      <div class="acceso-formulario">
+        <img class="acceso-foto-movil solo-movil-bloque" src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=700&amp;q=70&amp;auto=format&amp;fit=crop" alt="" loading="lazy">
+        <ol class="pasos-estado"><li class="hecho"><span class="num"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Cuenta</li><li class="actual" aria-current="step"><span class="num">2</span>Negocio</li><li class=""><span class="num">3</span>Revisión</li></ol>
+        <div>
+          <p class="etiqueta">Registro de negocio · Paso 2 de 3</p>
+          <h1>Cuéntanos de tu negocio</h1>
+          <p class="texto-suave">El equipo de SelloYa revisa cada negocio antes de activarlo, para proteger a los clientes.</p>
+        </div>
+        <form class="formulario" action="solicitud-enviada.html" method="get">
+          <div class="campo">
+            <label for="negocio">Nombre del negocio <small>(obligatorio)</small></label>
+            <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v10h16V10M2.5 10 4.5 4h15l2 6zM9.5 20v-5h5v5"/></svg><input id="negocio" name="negocio" type="text" value="Panadería El Trigal" autocomplete="organization" required></div>
+          </div>
+          <div class="campo">
+            <label for="categoria">Categoría</label>
+            <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 11c0-3 3-5 7-5s7 2 7 5v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M9 10v3M12 10v3M15 10v3"/></svg><select id="categoria" name="categoria"><option>Cafetería</option><option selected>Panadería</option><option>Peluquería</option><option>Restaurante</option><option>Otro</option></select></div>
+          </div>
+          <div class="campo">
+            <label for="direccion">Dirección</label>
+            <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><input id="direccion" name="direccion" type="text" value="Cra. 11 # 93-24, Bogotá" autocomplete="street-address"></div>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono de contacto</label>
+            <div class="campo-control"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg><input id="telefono" name="telefono" type="tel" value="+57 310 555 0142" autocomplete="tel"></div>
+          </div>
+          <fieldset class="opciones">
+            <legend>Plan para empezar</legend>
+            <label class="opcion"><input type="radio" name="plan" value="gratuito" checked><strong>Gratuito</strong><span>$0 · hasta 50 clientes</span></label>
+            <label class="opcion"><input type="radio" name="plan" value="negocio"><strong>Negocio</strong><span>$29.000 / mes</span></label>
+          </fieldset>
+          <p class="campo-ayuda">Puedes cambiar de plan cuando quieras.</p>
+          <div class="fila-botones">
+            <a class="btn btn-secundario" href="crear-cuenta.html"><span>Atrás</span></a>
+            <button class="btn btn-primario" type="submit" style="flex:1"><span>Enviar solicitud</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg></button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

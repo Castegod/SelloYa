@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canje solicitado · SelloYa</title>
+  <meta name="description" content="Canje solicitado · Portal del cliente de SelloYa.">
+  <link rel="icon" href="../img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
+</head>
+<body class="app">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="app-marco">
+    <!-- Menú lateral (escritorio) -->
+    <aside class="app-lateral" aria-label="Menú del portal del cliente">
+      <a class="logo" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+      <p class="etiqueta">Portal del cliente</p>
+      <a class="btn btn-primario btn-bloque" href="registrar-sello.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></svg><span>Registrar sello</span></a>
+      <nav aria-label="Secciones del portal del cliente">
+        <ul class="menu-lateral">
+          <li><a href="tarjetas.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2.5"/><circle cx="7.5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><path d="M16 12h2.5"/></svg><span>Mis tarjetas</span></a></li>
+          <li><a href="recompensas.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8c-1-3-3.5-4.5-5-3.3S7 8 12 8zm0 0c1-3 3.5-4.5 5-3.3S17 8 12 8z"/></svg><span>Recompensas</span> <span class="insignia numero">1</span><span class="sr"> pendientes</span></a></li>
+          <li><a href="promociones.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span>Promociones</span></a></li>
+          <li><a href="notificaciones.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span>Notificaciones</span> <span class="insignia numero">2</span><span class="sr"> pendientes</span></a></li>
+          <li><a href="historial.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Historial de visitas</span></a></li>
+          <li><a href="perfil.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Mi perfil</span></a></li>
+        </ul>
+      </nav>
+      <ul class="menu-lateral">
+        <li><a href="../ayuda.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg><span>Centro de ayuda</span></a></li>
+      </ul>
+      <div class="app-lateral-pie">
+        <a class="usuario-actual" href="perfil.html"><img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&amp;q=70&amp;auto=format&amp;fit=crop" alt="" loading="lazy" style="width:2.5rem;height:2.5rem"><span><strong>Laura Gómez</strong><small>Cliente</small></span></a>
+        <ul class="menu-lateral">
+          <li><a class="cerrar-sesion" href="../index.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg><span>Cerrar sesión</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="app-principal">
+      <!-- Barra superior: ruta en escritorio; logo o «Volver» en celular -->
+      <header class="app-barra">
+        <ol class="ruta solo-escritorio" aria-label="Ruta de navegación"><li>Portal del cliente</li><li aria-current="page">Canje solicitado</li></ol>
+        <div class="app-barra-titulo solo-movil"><a class="boton-icono" style="border:0" href="recompensas.html" aria-label="Volver"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a><h2>Canje solicitado</h2></div>
+        <div class="app-barra-acciones">
+          <div class="buscador solo-escritorio">
+            <label class="sr" for="buscar">Buscar</label>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="buscar" type="search" placeholder="Buscar negocio o promoción…">
+          </div>
+          <a class="boton-icono" href="../ayuda.html" aria-label="Centro de ayuda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg></a>
+          <a class="boton-icono" href="notificaciones.html" aria-label="Notificaciones (2 nuevas)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="punto-aviso"></span></a>
+          <a class="solo-escritorio" href="perfil.html" aria-label="Ir a mi perfil"><img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&amp;q=70&amp;auto=format&amp;fit=crop" alt="" loading="lazy" style="width:2.75rem;height:2.75rem"></a>
+        </div>
+      </header>
+
+      <main id="contenido" class="app-contenido">
+        <div class="centro-angosto pila-grande">
+          <header class="encabezado-pagina">
+          <div>
+            <p class="etiqueta">Canje en curso</p>
+            <h1>Muestra este código en caja</h1>
+            <p>Panadería El Trigal · Croissant gratis</p>
+          </div>
+        </header>
+          <ol class="pasos-estado"><li class="hecho"><span class="num"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Solicitado</li><li class="actual" aria-current="step"><span class="num">2</span>En caja</li><li class=""><span class="num">3</span>Entregado</li></ol>
+          <section class="caja pila centrado" style="align-items:center;padding:2rem" aria-label="Código de canje">
+            <img class="qr-img" src="../img/qr-negocio.svg" alt="Código QR del canje CJ-2931" width="220" height="220">
+            <p class="codigo-caja" style="margin:0">CJ-2931</p>
+            <span class="insignia pendiente">Pendiente de entrega</span>
+            <p class="texto-suave texto-pequeno" style="margin:0">El código es válido por 15 minutos. Cuando el negocio confirme la entrega, tu tarjeta vuelve a 0 sellos.</p>
+          </section>
+          <div class="aviso aviso-info">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+          <div class="aviso-texto"><strong>Si el negocio no puede leer el código</strong><p>Diles el número CJ-2931: lo pueden escribir en su panel.</p></div>
+  
+        </div>
+          <a class="btn btn-primario btn-bloque" href="recompensas.html"><span>Listo, volver a recompensas</span></a>
+          <p class="centrado" style="margin:0"><a class="enlace" style="color:var(--error)" href="recompensas.html?aviso=canje-cancelado">Cancelar solicitud</a></p>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Barra de pestañas (celular) -->
+  <nav class="app-pestanas" aria-label="Accesos rápidos">
+    <ul>
+      <li><a href="tarjetas.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Inicio</a></li>
+      <li><a href="recompensas.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8c-1-3-3.5-4.5-5-3.3S7 8 12 8zm0 0c1-3 3.5-4.5 5-3.3S17 8 12 8z"/></svg>Premios</a></li>
+      <li><a class="flotante" href="registrar-sello.html"><span class="circulo"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></svg></span>Escanear</a></li>
+      <li><a href="promociones.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>Promos</a></li>
+      <li><a href="perfil.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Perfil</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>

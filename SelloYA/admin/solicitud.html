@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalle de solicitud · SelloYa</title>
+  <meta name="description" content="Detalle de solicitud · Administración SelloYa de SelloYa.">
+  <link rel="icon" href="../img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
+</head>
+<body class="app">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="app-marco">
+    <!-- Menú lateral (escritorio) -->
+    <aside class="app-lateral" aria-label="Menú del administración selloya">
+      <a class="logo" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+      <p class="etiqueta">Administración SelloYa</p>
+      <nav aria-label="Secciones del administración selloya">
+        <ul class="menu-lateral">
+          <li><a href="indicadores.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M7 16v2M12 11v7M17 7v11"/></svg><span>Indicadores</span></a></li>
+          <li><a href="negocios.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v10h16V10M2.5 10 4.5 4h15l2 6zM9.5 20v-5h5v5"/></svg><span>Negocios</span> <span class="insignia numero">2</span><span class="sr"> pendientes</span></a></li>
+          <li><a href="planes.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><span>Planes y suscripciones</span></a></li>
+          <li><a href="soporte.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m5.6 5.6 3.6 3.6M14.8 14.8l3.6 3.6M14.8 9.2l3.6-3.6M5.6 18.4l3.6-3.6"/></svg><span>Soporte</span> <span class="insignia numero">1</span><span class="sr"> pendientes</span></a></li>
+        </ul>
+      </nav>
+      <ul class="menu-lateral">
+        <li><a href="../ayuda.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg><span>Centro de ayuda</span></a></li>
+      </ul>
+      <div class="app-lateral-pie">
+        <div class="usuario-actual"><span class="avatar avatar-iniciales" aria-hidden="true" style="width:2.5rem;height:2.5rem">VR</span><span><strong>Valentina Ruiz</strong><small>Administradora</small></span></div>
+        <ul class="menu-lateral">
+          <li><a class="cerrar-sesion" href="../index.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg><span>Cerrar sesión</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="app-principal">
+      <!-- Barra superior: ruta en escritorio; logo o «Volver» en celular -->
+      <header class="app-barra">
+        <ol class="ruta solo-escritorio" aria-label="Ruta de navegación"><li>Administración SelloYa</li><li>Negocios</li><li aria-current="page">Panadería El Trigal</li></ol>
+        <div class="app-barra-titulo solo-movil"><a class="boton-icono" style="border:0" href="negocios.html" aria-label="Volver"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg></a><h2>Detalle de solicitud</h2></div>
+        <div class="app-barra-acciones">
+          <div class="buscador solo-escritorio">
+            <label class="sr" for="buscar">Buscar</label>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="buscar" type="search" placeholder="Buscar negocio o incidencia…">
+          </div>
+          <a class="boton-icono" href="../ayuda.html" aria-label="Centro de ayuda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg></a>
+          <a class="boton-icono" href="soporte.html" aria-label="Incidencias abiertas (1)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="punto-aviso"></span></a>
+          <span class="solo-escritorio"><span class="avatar avatar-iniciales" aria-hidden="true" style="width:2.75rem;height:2.75rem">VR</span></span>
+        </div>
+      </header>
+
+      <main id="contenido" class="app-contenido">
+        <p class="solo-escritorio" style="margin:0"><a class="enlace enlace-sin-linea" href="negocios.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>Volver a negocios</a></p>
+        <header class="encabezado-pagina">
+          <div>
+            <p class="etiqueta">Solicitud de registro</p>
+            <h1>Panadería El Trigal</h1>
+            <p>Recibida hoy, 9:12 a. m. · Plan solicitado: Negocio</p>
+          </div>
+        </header>
+        <div class="columnas">
+          <div>
+            <section class="caja" aria-labelledby="datos-negocio">
+              <h2 id="datos-negocio" style="font-size:1.2rem">Datos del negocio</h2>
+              <dl class="datos"><div><dt>Responsable</dt><dd>Hernán Patiño</dd></div><div><dt>Categoría</dt><dd>Panadería</dd></div><div><dt>Dirección</dt><dd>Cra. 11 # 93-24, Bogotá</dd></div><div><dt>Teléfono</dt><dd>+57 310 555 0142</dd></div><div><dt>Correo</dt><dd>hola@eltrigal.co</dd></div><div><dt>Recompensa propuesta</dt><dd>Croissant gratis cada 8 compras</dd></div></dl>
+            </section>
+            <section class="caja pila" aria-labelledby="verificacion">
+              <h2 id="verificacion" style="font-size:1.2rem;margin:0">Verificación</h2>
+              <p class="dato-icono" style="color:var(--tinta)"><span style="color:var(--ok)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span>Correo verificado</p>
+              <p class="dato-icono" style="color:var(--tinta)"><span style="color:var(--ok)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg></span>Dirección encontrada en el mapa</p>
+              <p class="dato-icono" style="color:var(--tinta)"><span style="color:var(--acento)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>RUT pendiente (opcional en esta fase)</p>
+            </section>
+          </div>
+          <div>
+            <figure class="caja caja-media" style="margin:0">
+              <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=700&amp;q=70&amp;auto=format&amp;fit=crop" alt="Variedad de panes artesanales en una canasta" loading="lazy">
+              <figcaption class="caja-media-cuerpo texto-pequeno"><span class="texto-suave">Foto de portada enviada</span>Texto alternativo: «Variedad de panes artesanales en una canasta».</figcaption>
+            </figure>
+            <section class="caja pila" aria-labelledby="decision">
+              <h2 id="decision" style="font-size:1.2rem;margin:0">Decisión</h2>
+              <p class="texto-suave texto-pequeno" style="margin:0">Al aprobar, el negocio recibe un correo y puede generar su QR.</p>
+              <a class="btn btn-primario btn-bloque" href="negocios.html?aviso=aprobado"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Aprobar negocio</span></a>
+              <button class="btn btn-secundario btn-bloque" type="button" data-abrir="rechazar"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg><span>Rechazar solicitud</span></button>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Barra de pestañas (celular) -->
+  <nav class="app-pestanas" aria-label="Accesos rápidos">
+    <ul>
+      <li><a href="indicadores.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M7 16v2M12 11v7M17 7v11"/></svg>Indicadores</a></li>
+      <li><a href="negocios.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v10h16V10M2.5 10 4.5 4h15l2 6zM9.5 20v-5h5v5"/></svg>Negocios</a></li>
+      <li><a href="planes.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>Planes</a></li>
+      <li><a href="soporte.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="m5.6 5.6 3.6 3.6M14.8 14.8l3.6 3.6M14.8 9.2l3.6-3.6M5.6 18.4l3.6-3.6"/></svg>Soporte</a></li>
+    </ul>
+  </nav>
+  <!-- Diálogo de confirmación -->
+  <dialog class="dialogo" id="rechazar" aria-labelledby="rechazar-titulo">
+    <span class="icono-caja rojo"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0zM12 9v4M12 17h.01"/></svg></span>
+    <h2 id="rechazar-titulo">Rechazar la solicitud</h2>
+    <p class="texto-suave">Panadería El Trigal recibirá un correo con el motivo. Podrá corregir los datos y enviarla de nuevo.</p>
+    <div class="campo">
+    <label for="motivo">Motivo</label>
+    <div class="campo-control sin-icono"><select id="motivo" name="motivo"><option>Dirección o datos incompletos</option><option>Negocio duplicado</option><option>Categoría no admitida</option></select></div>
+  </div>
+    <div class="campo">
+    <label for="mensaje-rechazo">Mensaje para el negocio</label>
+    <textarea id="mensaje-rechazo" name="mensaje-rechazo" rows="4">Hola, Hernán: la dirección no coincide con el mapa. ¿Nos ayudas a corregirla?</textarea>
+  </div>
+    <div class="fila-botones">
+      <button class="btn btn-secundario" type="button" data-cerrar>Cancelar</button>
+      <a class="btn btn-peligro" href="negocios.html?aviso=rechazado">Rechazar y notificar</a>
+    </div>
+  </dialog>
+</body>
+</html>

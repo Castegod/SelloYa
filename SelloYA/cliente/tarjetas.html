@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis tarjetas · SelloYa</title>
+  <meta name="description" content="Mis tarjetas · Portal del cliente de SelloYa.">
+  <link rel="icon" href="../img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../app.js" defer></script>
+</head>
+<body class="app">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="app-marco">
+    <!-- Menú lateral (escritorio) -->
+    <aside class="app-lateral" aria-label="Menú del portal del cliente">
+      <a class="logo" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+      <p class="etiqueta">Portal del cliente</p>
+      <a class="btn btn-primario btn-bloque" href="registrar-sello.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></svg><span>Registrar sello</span></a>
+      <nav aria-label="Secciones del portal del cliente">
+        <ul class="menu-lateral">
+          <li><a href="tarjetas.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2.5"/><circle cx="7.5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><path d="M16 12h2.5"/></svg><span>Mis tarjetas</span></a></li>
+          <li><a href="recompensas.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8c-1-3-3.5-4.5-5-3.3S7 8 12 8zm0 0c1-3 3.5-4.5 5-3.3S17 8 12 8z"/></svg><span>Recompensas</span> <span class="insignia numero">1</span><span class="sr"> pendientes</span></a></li>
+          <li><a href="promociones.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg><span>Promociones</span></a></li>
+          <li><a href="notificaciones.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span>Notificaciones</span> <span class="insignia numero">2</span><span class="sr"> pendientes</span></a></li>
+          <li><a href="historial.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Historial de visitas</span></a></li>
+          <li><a href="perfil.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Mi perfil</span></a></li>
+        </ul>
+      </nav>
+      <ul class="menu-lateral">
+        <li><a href="../ayuda.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg><span>Centro de ayuda</span></a></li>
+      </ul>
+      <div class="app-lateral-pie">
+        <a class="usuario-actual" href="perfil.html"><img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&amp;q=70&amp;auto=format&amp;fit=crop" alt="" loading="lazy" style="width:2.5rem;height:2.5rem"><span><strong>Laura Gómez</strong><small>Cliente</small></span></a>
+        <ul class="menu-lateral">
+          <li><a class="cerrar-sesion" href="../index.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg><span>Cerrar sesión</span></a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="app-principal">
+      <!-- Barra superior: ruta en escritorio; logo o «Volver» en celular -->
+      <header class="app-barra">
+        <ol class="ruta solo-escritorio" aria-label="Ruta de navegación"><li>Portal del cliente</li><li aria-current="page">Mis tarjetas</li></ol>
+        <a class="logo solo-movil" href="../index.html" aria-label="SelloYa, ir al inicio"><img src="../img/isotipo.svg" alt="" width="40" height="40"><span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span></a>
+        <div class="app-barra-acciones">
+          <div class="buscador solo-escritorio">
+            <label class="sr" for="buscar">Buscar</label>
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="buscar" type="search" placeholder="Buscar negocio o promoción…">
+          </div>
+          <a class="boton-icono" href="../ayuda.html" aria-label="Centro de ayuda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4M12 17.5h.01"/></svg></a>
+          <a class="boton-icono" href="notificaciones.html" aria-label="Notificaciones (2 nuevas)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="punto-aviso"></span></a>
+          <a class="solo-escritorio" href="perfil.html" aria-label="Ir a mi perfil"><img class="avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=160&amp;q=70&amp;auto=format&amp;fit=crop" alt="" loading="lazy" style="width:2.75rem;height:2.75rem"></a>
+        </div>
+      </header>
+
+      <main id="contenido" class="app-contenido">
+        <header class="encabezado-pagina">
+          <div>
+            <p class="etiqueta">Hola, Laura</p>
+            <h1>Tus tarjetas de sellos</h1>
+            <p>Tienes 3 tarjetas activas y 1 recompensa lista para canjear.</p>
+          </div>
+          <div class="fila-botones"><a class="btn btn-primario" href="registrar-sello.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></svg><span>Registrar sello</span></a></div>
+        </header>
+        <a class="solo-movil btn btn-primario btn-bloque" href="registrar-sello.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></svg><span>Registrar sello</span></a>
+        <div class="aviso aviso-ok">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8c-1-3-3.5-4.5-5-3.3S7 8 12 8zm0 0c1-3 3.5-4.5 5-3.3S17 8 12 8z"/></svg>
+          <div class="aviso-texto"><strong>Tu croissant gratis está listo</strong><p>Panadería El Trigal · Muéstralo en caja antes del 30 de noviembre.</p></div>
+          <a class="btn btn-blanco btn-mini" href="recompensas.html"><span>Canjear</span></a>
+        </div>
+        <section aria-label="Tarjetas activas" class="rejilla-3">
+          <a class="caja caja-media caja-enlace" href="tarjeta.html">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&amp;q=70&amp;auto=format&amp;fit=crop" alt="Interior de una cafetería con mesas y plantas" loading="lazy">
+            <div class="caja-media-cuerpo">
+              <div class="fila-separada"><h3>Café La Esquina</h3><span class="insignia info">7 / 10</span></div>
+              <p class="texto-suave texto-pequeno" style="margin:0">Cafetería · Cra. 7 # 45-10</p>
+              <div class="barra " role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso en Café La Esquina"><span style="width:70%"></span></div>
+              <p class="dato-icono" style="color:var(--acento)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><span style="color:var(--tinta);font-weight:600">Faltan 3 sellos para un café americano gratis</span></p>
+              <span class="enlace enlace-sin-linea">Ver tarjeta <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+            </div>
+          </a>
+          <a class="caja caja-media caja-enlace" href="tarjeta.html">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&amp;q=70&amp;auto=format&amp;fit=crop" alt="Panes artesanales con espigas de trigo" loading="lazy">
+            <div class="caja-media-cuerpo">
+              <div class="fila-separada"><h3>Panadería El Trigal</h3><span class="insignia ok">8 / 8</span></div>
+              <p class="texto-suave texto-pequeno" style="margin:0">Panadería · Cra. 11 # 93-24</p>
+              <div class="barra barra-ok" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso en Panadería El Trigal"><span style="width:100%"></span></div>
+              <p class="dato-icono" style="color:var(--ok)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8c-1-3-3.5-4.5-5-3.3S7 8 12 8zm0 0c1-3 3.5-4.5 5-3.3S17 8 12 8z"/></svg><span style="color:var(--tinta);font-weight:600">¡Completaste la tarjeta! Croissant gratis</span></p>
+              <span class="enlace enlace-sin-linea">Ver tarjeta <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+            </div>
+          </a>
+          <a class="caja caja-media caja-enlace" href="tarjeta.html">
+            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=600&amp;q=70&amp;auto=format&amp;fit=crop" alt="Sillas de una peluquería con espejos" loading="lazy">
+            <div class="caja-media-cuerpo">
+              <div class="fila-separada"><h3>Peluquería Estilo</h3><span class="insignia info">2 / 6</span></div>
+              <p class="texto-suave texto-pequeno" style="margin:0">Peluquería · Cl. 53 # 13-40</p>
+              <div class="barra " role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso en Peluquería Estilo"><span style="width:33%"></span></div>
+              <p class="dato-icono" style="color:var(--acento)"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path fill="currentColor" stroke="none" d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg><span style="color:var(--tinta);font-weight:600">Faltan 4 visitas para un corte gratis</span></p>
+              <span class="enlace enlace-sin-linea">Ver tarjeta <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
+            </div>
+          </a>
+        </section>
+        <section class="pila" aria-labelledby="promos-titulo">
+          <div class="titulo-seccion"><h2 id="promos-titulo">Promociones para ti</h2><a class="enlace enlace-sin-linea" href="promociones.html">Ver todas <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></div>
+          <div class="rejilla-2">
+            <a class="caja promo-fila caja-enlace" href="promociones.html"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300&amp;q=70&amp;auto=format&amp;fit=crop" alt="Dos capuchinos con arte latte sobre una mesa" loading="lazy"><div><span class="insignia ok">Vigente</span><p><strong>2×1 en capuchinos</strong></p><p class="texto-suave texto-pequeno">Café La Esquina · hasta el 31 de octubre</p></div></a>
+            <a class="caja promo-fila caja-enlace" href="promociones.html"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=300&amp;q=70&amp;auto=format&amp;fit=crop" alt="Panes artesanales con espigas de trigo" loading="lazy"><div><span class="insignia ok">Vigente</span><p><strong>Lleva 3 panes artesanales y paga 2</strong></p><p class="texto-suave texto-pequeno">Panadería El Trigal · hasta el 20 de noviembre</p></div></a>
+          </div>
+        </section>
+        <section class="pila" aria-labelledby="actividad-titulo">
+          <div class="titulo-seccion"><h2 id="actividad-titulo">Actividad reciente</h2><a class="enlace enlace-sin-linea" href="historial.html">Ver historial <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></div>
+          <div class="caja" style="padding-block:.25rem">
+            <ul class="lista">
+              <li><a class="item" href="historial.html"><span class="icono-caja verde"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="item-texto"><span class="item-titulo">Sello registrado en Café La Esquina</span><span class="item-sub">Hoy, 8:15 a. m. · Sello 7 de 10</span></span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+              <li><a class="item" href="recompensas.html"><span class="icono-caja"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8c-1-3-3.5-4.5-5-3.3S7 8 12 8zm0 0c1-3 3.5-4.5 5-3.3S17 8 12 8z"/></svg></span><span class="item-texto"><span class="item-titulo">Recompensa desbloqueada: croissant gratis</span><span class="item-sub">Hace 3 días · Panadería El Trigal</span></span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+              <li><a class="item" href="historial.html"><span class="icono-caja verde"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><span class="item-texto"><span class="item-titulo">Sello registrado en Peluquería Estilo</span><span class="item-sub">Sáb. 25 de octubre · Sello 2 de 6</span></span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Barra de pestañas (celular) -->
+  <nav class="app-pestanas" aria-label="Accesos rápidos">
+    <ul>
+      <li><a href="tarjetas.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Inicio</a></li>
+      <li><a href="recompensas.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8c-1-3-3.5-4.5-5-3.3S7 8 12 8zm0 0c1-3 3.5-4.5 5-3.3S17 8 12 8z"/></svg>Premios</a></li>
+      <li><a class="flotante" href="registrar-sello.html"><span class="circulo"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></svg></span>Escanear</a></li>
+      <li><a href="promociones.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>Promos</a></li>
+      <li><a href="perfil.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Perfil</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
