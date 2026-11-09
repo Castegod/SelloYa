@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SelloYa — Tu tarjeta de sellos, ahora digital</title>
+  <meta name="description" content="SelloYa: fidelización digital con sellos y códigos QR para negocios locales.">
+  <link rel="icon" href="img/isotipo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ CABECERA (flex) ============ -->
+  <header class="cabecera">
+    <div class="contenedor barra-superior">
+      <a class="logo" href="#inicio" aria-label="SelloYa, ir al inicio">
+        <img src="img/isotipo.svg" alt="" width="40" height="40">
+        <span class="logo-texto" aria-hidden="true">Sello<span>Ya</span></span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#portal-cliente">Cliente</a></li>
+          <li><a href="#portal-negocio">Negocio</a></li>
+          <li><a href="#portal-admin">Admin</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="acciones">
+        <a class="btn btn-secundario" href="acceso/iniciar-sesion.html">Iniciar sesión</a>
+        <a class="btn btn-primario" href="acceso/crear-cuenta.html">Registrarse</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ INICIO / HERO (grid 2 columnas) ============ -->
+    <section class="hero" id="inicio">
+      <div class="contenedor hero-rejilla">
+        <div class="hero-texto">
+          <p class="etiqueta">Fidelización para negocios de barrio</p>
+          <h1>Tu tarjeta de sellos, ahora en el celular.</h1>
+          <p class="lead">
+            Cafeterías, panaderías y peluquerías reemplazan la tarjeta de cartón por una
+            tarjeta digital: el cliente escanea un código QR en cada compra, acumula sellos
+            y canjea su recompensa sin cargar nada en la billetera.
+          </p>
+          <div class="hero-botones">
+            <a class="btn btn-primario" href="acceso/crear-cuenta.html">Crear mi cuenta</a>
+            <a class="btn btn-secundario" href="#como-funciona">Ver cómo funciona</a>
+          </div>
+          <ul class="datos-rapidos">
+            <li><strong>0 $</strong> para empezar</li>
+            <li><strong>QR</strong> sin hardware extra</li>
+            <li><strong>AA</strong> accesible para todos</li>
+          </ul>
+        </div>
+
+        <!-- Tarjeta digital de muestra -->
+        <article class="tarjeta" aria-label="Ejemplo de tarjeta digital de sellos">
+          <header class="tarjeta-cabecera">
+            <div>
+              <p class="tarjeta-negocio">Café La Esquina</p>
+              <p class="tarjeta-sub">Tarjeta de fidelización</p>
+            </div>
+            <span class="tarjeta-contador">7 / 10</span>
+          </header>
+
+          <ol class="sellos" aria-label="7 de 10 sellos acumulados">
+            <li class="sello on"><span class="sr">Sello 1 obtenido</span>✓</li>
+            <li class="sello on"><span class="sr">Sello 2 obtenido</span>✓</li>
+            <li class="sello on"><span class="sr">Sello 3 obtenido</span>✓</li>
+            <li class="sello on"><span class="sr">Sello 4 obtenido</span>✓</li>
+            <li class="sello on"><span class="sr">Sello 5 obtenido</span>✓</li>
+            <li class="sello on"><span class="sr">Sello 6 obtenido</span>✓</li>
+            <li class="sello on"><span class="sr">Sello 7 obtenido</span>✓</li>
+            <li class="sello"><span class="sr">Sello 8 pendiente</span>8</li>
+            <li class="sello"><span class="sr">Sello 9 pendiente</span>9</li>
+            <li class="sello sello-premio"><span class="sr">Recompensa en el sello 10</span>★</li>
+          </ol>
+
+          <div class="barra" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso hacia la recompensa">
+            <span style="width:70%"></span>
+          </div>
+          <p class="tarjeta-pie">Te faltan <strong>3 sellos</strong> para un café americano gratis.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA (grid 4 columnas) ============ -->
+    <section class="seccion alt" id="como-funciona">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Proceso de acumulación</p>
+          <h2>Cuatro pasos, sin instalar nada</h2>
+          <p>Cliente, negocio y SelloYa trabajan en conjunto para que cada compra cuente.</p>
+        </header>
+
+        <ol class="pasos">
+          <li class="paso">
+            <h3>Compra</h3>
+            <p>El cliente realiza su compra en el negocio, como siempre.</p>
+          </li>
+          <li class="paso">
+            <h3>Escanea el QR</h3>
+            <p>El negocio muestra su código en el punto de venta; el cliente lo escanea o escribe el código corto.</p>
+          </li>
+          <li class="paso">
+            <h3>Se valida</h3>
+            <p>El sistema verifica que el código sea de un negocio activo y suma el sello a la tarjeta.</p>
+          </li>
+          <li class="paso">
+            <h3>Recompensa</h3>
+            <p>Al llegar a la meta, la recompensa queda disponible y el cliente recibe una notificación.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ACTORES (grid auto-fit) ============ -->
+    <section class="seccion" id="actores">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Usuarios y actores</p>
+          <h2>Cuatro perfiles, cada uno con su espacio</h2>
+        </header>
+
+        <div class="actores">
+          <article class="actor actor-visitante">
+            <h3>Visitante</h3>
+            <p>Conoce la plataforma, revisa planes y decide si se registra como cliente o negocio.</p>
+          </article>
+          <article class="actor actor-cliente">
+            <h3>Cliente final</h3>
+            <p>Acumula sellos, consulta su progreso, canjea recompensas y ve promociones.</p>
+          </article>
+          <article class="actor actor-negocio">
+            <h3>Dueño del negocio</h3>
+            <p>Configura metas, genera su QR, publica promociones y revisa estadísticas.</p>
+          </article>
+          <article class="actor actor-admin">
+            <h3>Administrador</h3>
+            <p>Aprueba negocios nuevos, gestiona planes y atiende incidencias de soporte.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTAL DEL CLIENTE ============ -->
+    <section class="seccion alt" id="portal-cliente">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Portal del cliente</p>
+          <h2>Mi tarjeta, mis recompensas, mis promociones</h2>
+        </header>
+
+        <div class="ver-portal">
+          <p>Vista previa. El portal completo del cliente tiene 10 pantallas, en celular y escritorio.</p>
+          <a class="btn btn-primario" href="cliente/tarjetas.html">Abrir el portal del cliente</a>
+        </div>
+
+        <div class="ventana">
+          <div class="ventana-barra" aria-hidden="true">
+            <span class="punto"></span><span class="punto"></span><span class="punto"></span>
+            <span class="ventana-titulo">selloya.com / cliente</span>
+          </div>
+
+          <div class="portal">
+            <nav class="portal-menu" aria-label="Menú del cliente">
+              <ul>
+                <li><a href="#cli-tarjeta" aria-current="page">Mi tarjeta</a></li>
+                <li><a href="#cli-recompensas">Recompensas</a></li>
+                <li><a href="#cli-promos">Promociones</a></li>
+                <li><a href="#cli-notificaciones">Notificaciones <span class="insignia pendiente">2</span></a></li>
+                <li><a href="#cli-historial">Historial</a></li>
+              </ul>
+            </nav>
+
+            <div class="portal-contenido">
+              <p class="saludo">Hola, Laura  <span>Tienes 1 recompensa disponible.</span></p>
+
+              <div class="cuadricula-2">
+                <article class="caja" id="cli-tarjeta">
+                  <h3>Mi tarjeta — Café La Esquina</h3>
+                  <p class="grande">7 <small>de 10 sellos</small></p>
+                  <div class="barra barra-clara" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" aria-label="Progreso de la tarjeta">
+                    <span style="width:70%"></span>
+                  </div>
+                  <p class="nota">Último sello: hoy, 8:15 a. m.</p>
+                </article>
+
+                <article class="caja" id="cli-sello">
+                  <h3>Registrar un sello</h3>
+                  <p class="nota">¿Sin cámara? Escribe el código corto del negocio.</p>
+                  <form class="formulario" action="#" onsubmit="return false">
+                    <label>Código del negocio
+                      <input type="text" placeholder="CAFE-4821" autocomplete="off">
+                    </label>
+                    <div class="fila-botones">
+                      <a class="btn btn-primario" href="cliente/registrar-sello.html">Registrar sello</a>
+                      <a class="btn btn-secundario" href="cliente/registrar-sello.html">Escanear QR</a>
+                    </div>
+                  </form>
+                </article>
+
+                <article class="caja" id="cli-recompensas">
+                  <h3>Recompensas</h3>
+                  <ul class="lista-items">
+                    <li>
+                      <div><strong>Croissant gratis</strong><span>Disponible ahora</span></div>
+                      <a class="btn btn-mini btn-primario" href="cliente/canje.html">Solicitar canje</a>
+                    </li>
+                    <li>
+                      <div><strong>Café americano gratis</strong><span>Al llegar a 10 sellos</span></div>
+                      <span class="insignia pendiente">En progreso</span>
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="caja" id="cli-promos">
+                  <h3>Promociones activas</h3>
+                  <ul class="lista-items">
+                    <li>
+                      <div><strong>2×1 en capuchinos</strong><span>Hasta el 31 de octubre</span></div>
+                      <span class="insignia ok">Vigente</span>
+                    </li>
+                    <li>
+                      <div><strong>Combo desayuno −15 %</strong><span>Hasta el 15 de noviembre</span></div>
+                      <span class="insignia ok">Vigente</span>
+                    </li>
+                  </ul>
+                </article>
+
+                <article class="caja" id="cli-notificaciones">
+                  <h3>Notificaciones</h3>
+                  <ul class="lista-items">
+                    <li>
+                      <div><strong>Café La Esquina: 2×1 en capuchinos</strong><span>Nueva promoción · hoy, 7:30 a. m.</span></div>
+                      <span class="insignia pendiente">Nueva</span>
+                    </li>
+                    <li>
+                      <div><strong>Café La Esquina: combo desayuno −15 %</strong><span>Nueva promoción · ayer</span></div>
+                      <span class="insignia pendiente">Nueva</span>
+                    </li>
+                    <li>
+                      <div><strong>Tu croissant gratis está listo</strong><span>Recompensa disponible · hace 3 días</span></div>
+                      <span class="insignia ok">Leída</span>
+                    </li>
+                  </ul>
+                  <button class="btn btn-secundario btn-mini" type="button">Marcar todas como leídas</button>
+                </article>
+
+                <article class="caja" id="cli-historial">
+                  <h3>Historial de visitas</h3>
+                  <div class="tabla-contenedor">
+                    <table>
+                      <caption class="sr">Historial de sellos del cliente</caption>
+                      <thead><tr><th scope="col">Fecha</th><th scope="col">Negocio</th><th scope="col">Sello</th></tr></thead>
+                      <tbody>
+                        <tr><td>Hoy, 8:15</td><td>Café La Esquina</td><td>7</td></tr>
+                        <tr><td>Ayer, 8:40</td><td>Café La Esquina</td><td>6</td></tr>
+                        <tr><td>Lun., 9:05</td><td>Café La Esquina</td><td>5</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTAL DEL NEGOCIO ============ -->
+    <section class="seccion" id="portal-negocio">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Portal del negocio</p>
+          <h2>Configura, publica y mide desde un solo panel</h2>
+        </header>
+
+        <div class="ver-portal">
+          <p>Vista previa. El módulo de administración del negocio tiene 10 pantallas.</p>
+          <a class="btn btn-primario" href="negocio/resumen.html">Abrir el portal del negocio</a>
+        </div>
+
+        <div class="ventana">
+          <div class="ventana-barra" aria-hidden="true">
+            <span class="punto"></span><span class="punto"></span><span class="punto"></span>
+            <span class="ventana-titulo">selloya.com / negocio</span>
+          </div>
+
+          <div class="portal">
+            <nav class="portal-menu" aria-label="Menú del negocio">
+              <ul>
+                <li><a href="#neg-resumen" aria-current="page">Resumen</a></li>
+                <li><a href="#neg-canjes">Canjes pendientes <span class="insignia pendiente">1</span></a></li>
+                <li><a href="#neg-reglas">Sellos y recompensas</a></li>
+                <li><a href="#neg-qr">Código QR</a></li>
+                <li><a href="#neg-promo">Promociones</a></li>
+                <li><a href="#neg-sellos">Estadísticas</a></li>
+                <li><a href="#neg-plan">Plan y suscripción</a></li>
+              </ul>
+            </nav>
+
+            <div class="portal-contenido">
+              <ul class="kpis" id="neg-resumen">
+                <li class="kpi"><span>Clientes registrados</span><strong>128</strong></li>
+                <li class="kpi"><span>Sellos este mes</span><strong>412</strong></li>
+                <li class="kpi"><span>Recompensas canjeadas</span><strong>23</strong></li>
+                <li class="kpi"><span>Promociones activas</span><strong>2</strong></li>
+              </ul>
+
+              <div class="cuadricula-2">
+                <article class="caja caja-qr" id="neg-qr">
+                  <div class="qr" role="img" aria-label="Código QR de muestra del negocio">
+                    <i class="qr-esq qr-a"></i><i class="qr-esq qr-b"></i><i class="qr-esq qr-c"></i>
+                  </div>
+                  <div class="qr-info">
+                    <h3>Código QR del negocio</h3>
+                    <p class="nota">Muéstralo en caja. Código manual:</p>
+                    <p class="codigo">CAFE-4821</p>
+                    <div class="fila-botones">
+                      <a class="btn btn-primario" href="negocio/codigo-qr.html">Descargar</a>
+                      <a class="btn btn-secundario" href="negocio/codigo-qr.html">Imprimir</a>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="caja" id="neg-reglas">
+                  <h3>Reglas de fidelización</h3>
+                  <form class="formulario" action="#" onsubmit="return false">
+                    <label>Sellos necesarios
+                      <input type="number" value="10" min="1">
+                    </label>
+                    <label>Recompensa
+                      <input type="text" value="Café americano gratis">
+                    </label>
+                    <a class="btn btn-primario" href="negocio/reglas.html?aviso=reglas">Guardar reglas</a>
+                  </form>
+                </article>
+
+                <article class="caja" id="neg-promo">
+                  <h3>Nueva promoción</h3>
+                  <form class="formulario" action="#" onsubmit="return false">
+                    <label>Título
+                      <input type="text" placeholder="Ej. 2×1 en capuchinos">
+                    </label>
+                    <div class="fila-campos">
+                      <label>Inicio <input type="date"></label>
+                      <label>Fin <input type="date"></label>
+                    </div>
+                    <a class="btn btn-primario" href="negocio/promociones.html?aviso=promocion">Publicar promoción</a>
+                  </form>
+                </article>
+
+                <article class="caja" id="neg-sellos">
+                  <h3>Últimos sellos registrados</h3>
+                  <div class="tabla-contenedor">
+                    <table>
+                      <caption class="sr">Últimos sellos registrados en el negocio</caption>
+                      <thead>
+                        <tr><th scope="col">Cliente</th><th scope="col">Hora</th><th scope="col">Sellos</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr><td>Laura G.</td><td>8:15</td><td>7</td></tr>
+                        <tr><td>Andrés P.</td><td>8:02</td><td>3</td></tr>
+                        <tr><td>Marta R.</td><td>7:48</td><td>10</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </article>
+
+                <article class="caja" id="neg-canjes">
+                  <h3>Canjes pendientes de entrega</h3>
+                  <ul class="lista-items">
+                    <li>
+                      <div><strong>Marta R. — Café americano gratis</strong><span>Solicitado hoy, 7:48 a. m.</span></div>
+                      <a class="btn btn-mini btn-primario" href="negocio/canjes.html">Confirmar entrega</a>
+                    </li>
+                    <li>
+                      <div><strong>Andrés P. — Croissant gratis</strong><span>Entregado ayer</span></div>
+                      <span class="insignia ok">Entregado</span>
+                    </li>
+                  </ul>
+                  <p class="nota">Al confirmar la entrega, la tarjeta del cliente vuelve a 0 sellos.</p>
+                </article>
+
+                <article class="caja" id="neg-plan">
+                  <h3>Plan y suscripción</h3>
+                  <p class="grande">Gratuito <small>$0 / mes</small></p>
+                  <ul class="lista-items">
+                    <li><div><strong>Clientes</strong><span>38 de 50 permitidos</span></div></li>
+                    <li><div><strong>Promociones activas</strong><span>1 de 1 permitida</span></div></li>
+                  </ul>
+                  <div class="fila-botones">
+                    <a class="btn btn-primario" href="negocio/plan.html">Cambiar de plan</a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PANEL ADMINISTRADOR ============ -->
+    <section class="seccion alt" id="portal-admin">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Panel del administrador de la plataforma</p>
+          <h2>Aprobar negocios y mantener todo en orden</h2>
+        </header>
+
+        <div class="ver-portal">
+          <p>Vista previa. El panel interno tiene 6 pantallas y su propio acceso.</p>
+          <a class="btn btn-primario" href="admin/indicadores.html">Abrir el panel del administrador</a>
+        </div>
+
+        <div class="ventana">
+          <div class="ventana-barra" aria-hidden="true">
+            <span class="punto"></span><span class="punto"></span><span class="punto"></span>
+            <span class="ventana-titulo">selloya.com / admin</span>
+          </div>
+
+          <div class="portal">
+            <nav class="portal-menu" aria-label="Menú del administrador">
+              <ul>
+                <li><a href="#adm-negocios" aria-current="page">Negocios</a></li>
+                <li><a href="#adm-planes">Planes y suscripciones</a></li>
+                <li><a href="#adm-soporte">Soporte</a></li>
+                <li><a href="#adm-kpis">Indicadores</a></li>
+              </ul>
+            </nav>
+
+            <div class="portal-contenido">
+              <ul class="kpis kpis-3" id="adm-kpis">
+                <li class="kpi"><span>Negocios activos</span><strong>14</strong></li>
+                <li class="kpi"><span>Pendientes de aprobar</span><strong>2</strong></li>
+                <li class="kpi"><span>Incidencias abiertas</span><strong>1</strong></li>
+              </ul>
+
+              <article class="caja" id="adm-negocios">
+                <h3>Negocios registrados</h3>
+                <div class="tabla-contenedor">
+                  <table>
+                    <caption class="sr">Lista de negocios registrados en la plataforma</caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Negocio</th>
+                        <th scope="col">Categoría</th>
+                        <th scope="col">Plan</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Acción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Café La Esquina</td><td>Cafetería</td><td>Gratuito</td>
+                        <td><span class="insignia ok">Activo</span></td>
+                        <td><a class="btn btn-mini btn-secundario" href="admin/negocios.html">Ver</a></td>
+                      </tr>
+                      <tr>
+                        <td>Panadería El Trigal</td><td>Panadería</td><td>Negocio</td>
+                        <td><span class="insignia pendiente">Pendiente</span></td>
+                        <td><a class="btn btn-mini btn-primario" href="admin/solicitud.html">Aprobar</a></td>
+                      </tr>
+                      <tr>
+                        <td>Peluquería Estilo</td><td>Peluquería</td><td>Gratuito</td>
+                        <td><span class="insignia pendiente">Pendiente</span></td>
+                        <td><a class="btn btn-mini btn-primario" href="admin/solicitud.html">Aprobar</a></td>
+                      </tr>
+                      <tr>
+                        <td>Restaurante Doña Rosa</td><td>Restaurante</td><td>Pro</td>
+                        <td><span class="insignia pausa">Suspendido</span></td>
+                        <td><a class="btn btn-mini btn-secundario" href="admin/incidencia.html">Revisar</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+
+              <article class="caja" id="adm-planes" style="margin-top:1rem">
+                <h3>Planes y suscripciones</h3>
+                <ul class="lista-items">
+                  <li><div><strong>Gratuito</strong><span>9 negocios</span></div><span class="insignia ok">Activo</span></li>
+                  <li><div><strong>Negocio — $29.000 / mes</strong><span>3 negocios</span></div><span class="insignia ok">Activo</span></li>
+                  <li><div><strong>Pro — $59.000 / mes</strong><span>2 negocios</span></div><span class="insignia ok">Activo</span></li>
+                </ul>
+              </article>
+
+              <article class="caja" id="adm-soporte" style="margin-top:1rem">
+                <h3>Soporte e incidencias</h3>
+                <div class="tabla-contenedor">
+                  <table>
+                    <caption class="sr">Incidencias de soporte</caption>
+                    <thead><tr><th scope="col">Reportó</th><th scope="col">Descripción</th><th scope="col">Estado</th><th scope="col">Acción</th></tr></thead>
+                    <tbody>
+                      <tr><td>Doña Rosa</td><td>No puedo descargar mi QR</td><td><span class="insignia pendiente">Abierta</span></td><td><a class="btn btn-mini btn-primario" href="admin/incidencia.html">Resolver</a></td></tr>
+                      <tr><td>Café La Esquina</td><td>Cambio de plan</td><td><span class="insignia ok">Resuelta</span></td><td><a class="btn btn-mini btn-secundario" href="admin/negocios.html">Ver</a></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============ ACCESO (grid 2 columnas) ============ -->
+    <section class="seccion alt" id="acceso">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Acceso</p>
+          <h2>Entra o crea tu cuenta</h2>
+        </header>
+
+        <div class="cuadricula-2 acceso">
+          <article class="caja">
+            <h3>Iniciar sesión</h3>
+            <form class="formulario" action="cliente/tarjetas.html" method="get">
+              <label>Correo electrónico
+                <input type="email" placeholder="tu@correo.com" autocomplete="email">
+              </label>
+              <label>Contraseña
+                <input type="password" autocomplete="current-password">
+              </label>
+              <button class="btn btn-primario" type="submit">Entrar</button>
+              <a class="enlace" href="#recuperar">¿Olvidaste tu contraseña?</a>
+            </form>
+          </article>
+
+          <article class="caja">
+            <h3>Crear cuenta</h3>
+            <form class="formulario" action="cliente/tarjetas.html" method="get">
+              <label>Nombre
+                <input type="text" autocomplete="name">
+              </label>
+              <label>Correo electrónico
+                <input type="email" autocomplete="email">
+              </label>
+              <div class="fila-campos">
+                <label>Contraseña
+                  <input type="password" autocomplete="new-password">
+                </label>
+                <label>Soy
+                  <select>
+                    <option>Cliente</option>
+                    <option>Dueño de negocio</option>
+                  </select>
+                </label>
+              </div>
+              <button class="btn btn-primario" type="submit">Registrarme</button>
+            </form>
+          </article>
+        </div>
+
+        <div class="cuadricula-2 acceso" style="margin-top:1.5rem">
+          <article class="caja" id="recuperar">
+            <h3>Recuperar contraseña</h3>
+            <p class="nota">Escribe tu correo y te enviamos un enlace de un solo uso para crear una nueva contraseña.</p>
+            <form class="formulario" action="acceso/revisa-tu-correo.html" method="get">
+              <label>Correo electrónico
+                <input type="email" placeholder="tu@correo.com" autocomplete="email">
+              </label>
+              <button class="btn btn-primario" type="submit">Enviar enlace</button>
+              <a class="enlace" href="#acceso">Volver a iniciar sesión</a>
+              <a class="enlace" href="acceso/registrar-negocio.html">¿Tienes un negocio? Regístralo aquí</a>
+              <a class="enlace" href="acceso/administrador.html">Acceso para administradores de SelloYa</a>
+            </form>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLANES (grid 3 columnas) ============ -->
+    <section class="seccion" id="planes">
+      <div class="contenedor">
+        <header class="encabezado-seccion">
+          <p class="etiqueta">Planes y precios</p>
+          <h2>Empieza gratis, crece cuando lo necesites</h2>
+                  </header>
+
+        <div class="planes">
+          <article class="plan">
+            <h3>Gratuito</h3>
+            <p class="precio">$0 <small>/ mes</small></p>
+            <ul>
+              <li>Hasta 50 clientes</li>
+              <li>1 código QR</li>
+              <li>1 promoción activa</li>
+            </ul>
+            <a class="btn btn-secundario" href="acceso/registrar-negocio.html">Empezar</a>
+          </article>
+
+          <article class="plan destacado">
+            <p class="plan-cinta">Más elegido</p>
+            <h3>Negocio</h3>
+            <p class="precio">$29.000 <small>/ mes</small></p>
+            <ul>
+              <li>Clientes ilimitados</li>
+              <li>Promociones ilimitadas</li>
+              <li>Promoción destacada en el carrusel</li>
+            </ul>
+            <a class="btn btn-primario" href="acceso/registrar-negocio.html">Elegir plan</a>
+          </article>
+
+          <article class="plan">
+            <h3>Pro</h3>
+            <p class="precio">$59.000 <small>/ mes</small></p>
+            <ul>
+              <li>Todo lo del plan Negocio</li>
+              <li>Reportes y estadísticas premium</li>
+              <li>Recompensas patrocinadas</li>
+            </ul>
+            <a class="btn btn-secundario" href="acceso/registrar-negocio.html">Elegir plan</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="seccion alt" id="contacto">
+      <div class="contenedor contacto-rejilla">
+        <div>
+          <p class="etiqueta">Contacto</p>
+          <h2>¿Quieres probar SelloYa en tu negocio?</h2>
+          <p>Estamos buscando 2 o 3 negocios piloto de cafetería o panadería. Cuéntanos sobre el tuyo y te acompañamos en la puesta en marcha.</p>
+        </div>
+
+        <form class="formulario caja" action="#" onsubmit="return false">
+          <label>Nombre del negocio
+            <input type="text">
+          </label>
+          <label>Correo de contacto
+            <input type="email" autocomplete="email">
+          </label>
+          <label>Mensaje
+            <textarea rows="4"></textarea>
+          </label>
+          <button class="btn btn-primario" type="button">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ PIE (flex) ============ -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <div class="pie-marca">
+        <img src="img/isotipo-inverso.svg" alt="" width="48" height="48">
+        <p><strong>SelloYa</strong> — Fidelización digital para negocios de barrio</p>
+      </div>
+      <ul class="pie-enlaces">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="ayuda.html">Centro de ayuda</a></li>
+        <li><a href="acceso/administrador.html">Acceso administradores</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
